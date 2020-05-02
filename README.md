@@ -15,5 +15,5 @@ The project also includes Tasks and async-await to implement asynchronous behavi
 
 ![Wpf](https://user-images.githubusercontent.com/45973605/80872130-c8441e80-8cb8-11ea-8853-e955f08479ea.png)
 
-This is a nice introduction to WPF and I Hope you will find this repository valuable for you.
+This is a nice introduction to WPF and I hope you will find this repository valuable for you.
 
