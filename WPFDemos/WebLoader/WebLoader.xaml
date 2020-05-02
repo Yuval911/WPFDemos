@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFDemos.WebLoader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemos"
+        mc:Ignorable="d"
+        Title="Web Loader" Height="450" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel>
+
+        <TextBlock Text="Insert a URL address to get the size of the page:" FontSize="20" Margin="70 30 160 0"/>
+
+        <StackPanel Orientation="Horizontal" Margin="60 30 60 0">
+            <TextBlock Text="URL:" FontSize="20" Margin="10"/>
+            <TextBox Text="{Binding URL}" Width="400" FontSize="20" Margin="10"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="60 30 60 0">
+            <TextBlock Text="Size:" FontSize="20" Margin="10"/>
+            <TextBlock Text="{Binding Size}" FontSize="20" Margin="10"/>
+            <TextBlock Text="{Binding Loading}" FontSize="20" Margin="10"/>
+        </StackPanel>
+
+        <Button Content="Get Size (Async)" Width="170" Height="40" FontSize="20" HorizontalAlignment="Left" Margin="70 40 0 0"
+                Command="{Binding LoadPageSizeAsync}" IsEnabled="{Binding IsIdle}">
+        </Button>
+
+        <Button Content="Get Size (Dispatcher)" Width="210" Height="40" FontSize="20" HorizontalAlignment="Left" Margin="70 30 0 0"
+                Command="{Binding LoadPageSizeDispatcher}" IsEnabled="{Binding IsIdle}">
+        </Button>
+
+    </StackPanel>
+</Window>
