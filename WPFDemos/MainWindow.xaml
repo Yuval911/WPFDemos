@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen">
     <StackPanel Width="500">
         <TextBlock Text="WPF Demos bundle" HorizontalAlignment="Center" Margin="20" FontSize="20" FontWeight="Bold"/>
-        <TextBlock Text="Click one of the 3 demos to launch it:" HorizontalAlignment="Center" Margin="0 0 0 15" FontSize="20"/>
+        <TextBlock Text="Click one of the demos to launch it:" HorizontalAlignment="Center" Margin="0 0 0 15" FontSize="20"/>
         <Button Content="Button Slider" Margin="25" FontSize="20" Height="35" Width="220" Click="Button1_Click"/>
         <Button Content="Arithmetic Game" Margin="25" FontSize="20" Height="35" Width="220" Click="Button2_Click"/>
         <Button Content="Web Loader" Margin="25" FontSize="20" Height="35" Width="220" Click="Button3_Click"/>

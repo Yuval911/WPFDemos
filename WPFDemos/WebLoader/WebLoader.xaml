@@ -9,24 +9,24 @@
         WindowStartupLocation="CenterScreen">
     <StackPanel>
 
-        <TextBlock Text="Insert a URL address to get the size of the page:" FontSize="20" Margin="70 30 160 0"/>
+        <TextBlock Text="Insert a URL address to get the size (number of characters) in the page:" TextWrapping="Wrap" FontSize="20" Margin="70 30 80 0"/>
 
-        <StackPanel Orientation="Horizontal" Margin="60 30 60 0">
+        <StackPanel Orientation="Horizontal" Margin="60 20 60 0">
             <TextBlock Text="URL:" FontSize="20" Margin="10"/>
             <TextBox Text="{Binding URL}" Width="400" FontSize="20" Margin="10"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Margin="60 30 60 0">
+        <StackPanel Orientation="Horizontal" Margin="60 20 60 0">
             <TextBlock Text="Size:" FontSize="20" Margin="10"/>
             <TextBlock Text="{Binding Size}" FontSize="20" Margin="10"/>
             <TextBlock Text="{Binding Loading}" FontSize="20" Margin="10"/>
         </StackPanel>
 
-        <Button Content="Get Size (Async)" Width="170" Height="40" FontSize="20" HorizontalAlignment="Left" Margin="70 40 0 0"
+        <Button Content="Get Size (with async-await)" Padding="5" Height="40" FontSize="20" HorizontalAlignment="Left" Margin="70 40 0 0"
                 Command="{Binding LoadPageSizeAsync}" IsEnabled="{Binding IsIdle}">
         </Button>
 
-        <Button Content="Get Size (Dispatcher)" Width="210" Height="40" FontSize="20" HorizontalAlignment="Left" Margin="70 30 0 0"
+        <Button Content="Get Size (with dispatcher)" Padding="5" Height="40" FontSize="20" HorizontalAlignment="Left" Margin="70 30 0 0"
                 Command="{Binding LoadPageSizeDispatcher}" IsEnabled="{Binding IsIdle}">
         </Button>
 
