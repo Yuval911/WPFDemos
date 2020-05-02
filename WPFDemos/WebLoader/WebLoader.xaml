@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen">
     <StackPanel>
 
-        <TextBlock Text="Insert a URL address to get the size (number of characters) in the page:" TextWrapping="Wrap" FontSize="20" Margin="70 30 80 0"/>
+        <TextBlock Text="Insert a URL address to get the size (number of characters) of the page:" TextWrapping="Wrap" FontSize="20" Margin="70 30 80 0"/>
 
         <StackPanel Orientation="Horizontal" Margin="60 20 60 0">
             <TextBlock Text="URL:" FontSize="20" Margin="10"/>
